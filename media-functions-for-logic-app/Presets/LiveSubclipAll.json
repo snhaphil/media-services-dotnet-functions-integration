@@ -1,0 +1,33 @@
+{
+  "Version": 1.0,
+  "Sources": [
+    {
+      "Streams": [
+        {
+          "Type": "AudioStream",
+          "Value": "*"
+        },
+        {
+          "Type": "VideoStream",
+          "Value": "*"
+        }
+      ]
+    }
+  ],
+  "Outputs": [
+    {
+      "FileName": "Archive_{Basename}.mp4",
+      "Format": {
+        "Type": "MP4Format"
+      }
+    }
+  ],
+  "Codecs": [
+    {
+      "Type": "CopyVideo"
+    },
+    {
+      "Type": "CopyAudio"
+    }
+  ]
+}
